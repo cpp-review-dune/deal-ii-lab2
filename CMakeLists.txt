@@ -8,5 +8,3 @@ find_package(GTest)
 enable_testing()
 
 add_subdirectory(source)
-
-# DEAL_II_INVOKE_AUTOPILOT()
