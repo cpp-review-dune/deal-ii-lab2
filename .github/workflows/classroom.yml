@@ -1,0 +1,13 @@
+# https://github.com/actions/virtual-environments/issues/5428
+name: GitHub Classroom Workflow
+
+on: [push]
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-22.04
+    container: ghcr.io/cpp-review-dune/introductory-review/deal-ii-action:latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: education/autograding@v1
