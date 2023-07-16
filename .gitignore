@@ -1,2 +1,6 @@
 build*
 *.svg
+examples
+*.tar.*
+code-gallery
+PKGBUILD
